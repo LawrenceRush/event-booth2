@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 
+
 //Setting up our PORT
 var PORT = process.env.PORT || 8080;
 
@@ -52,9 +53,7 @@ app.use(function(err, req, res, next) {
 // Routes
 // =============================================================
 require("./routes/api-routes.js")(app);
-require("./routes/html-routes.js")(app);
-// require("./routes/index.js")(app);
-
+require("./routes/html-routes.js")(app)
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
