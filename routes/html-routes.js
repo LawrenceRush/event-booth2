@@ -19,6 +19,7 @@ module.exports = function(app) {
 
   // emails route loads emails.html
   app.get("/emails", function(req, res) {
+    console.log("cat")
     res.sendFile(path.join(__dirname, "../public/emails.html"));
   });
 
